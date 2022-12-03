@@ -1,0 +1,411 @@
+/* *, *::before, *::after{
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Varela Round", sans-serif;
+  font-family: "Signika", sans-serif; */
+}
+a {
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+.container {
+  margin: auto;
+  width: 1200px;
+  /* min-height: 100vh; */
+  background-color: #eaeaea;
+  background-image: url("/images/bgV1.png");
+  /* background-size: 80% auto; */
+  /* background-position: 70% 50%; */
+
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(to bottom right, #f1f1f1, #f1b494); */
+  /* background-image: linear-gradient(to bottom right, #f1f1f1, #f3d5c5); */
+  /* background-image: linear-gradient(to bottom right, #f1f1f1, #ffc18d); */
+}
+
+.bg {
+  width: max-content;
+  height: fit-content;
+  position: absolute;
+  /* z-index: 1; */
+}
+
+.nav {
+  /* background-color: #eaeaea; */
+  color: #eaeaea;
+  padding: 15px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand_name {
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.nav_bar {
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.nav_link {
+  margin: 0 15px;
+}
+
+.section--1 {
+  margin: 15px 0 15px 0;
+  padding: 30px 70px;
+  min-height: 70vh;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* background-color: yellow; */
+  /* background-image: url("/images/hero_image1_V5.png");
+  background-size: 90% auto;
+  background-position: 70% 50%;
+
+  background-repeat: no-repeat; */
+}
+.blob {
+  width: 650px;
+  height: 650px;
+  background-color: #fd8547;
+  border-radius: 56% 44% 49% 51% / 67% 66% 34% 33%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transform: rotate(-90deg);
+}
+
+/* .hero_image {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  z-index: 3;
+} */
+
+.hero_box {
+  margin-top: 20px;
+  width: 50%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 120%;
+  /* font-family: "Signika", sans-serif; */
+  /* font-family: "M PLUS Rounded 1c", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  color: #eaeaea;
+}
+
+.btn {
+  font-family: "Varela Round", sans-serif;
+  padding: 11px 30px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  /* background-color: #fd8547; */
+  color: #ffff;
+  background-image: linear-gradient(to bottom right, #e0713b, #a62f0a);
+}
+
+.section--2 {
+  background-color: #f1f1f1;
+  padding: 20px 0 20px 0;
+  align-items: center;
+  text-align: center;
+}
+h2 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #353535;
+}
+
+.brands_wrapper {
+  /* background-color: beige; */
+  margin: 0 70px;
+  display: grid;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: left;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px;
+}
+
+.brand_logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.section--3 {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #eaeaea;
+}
+
+.cards_wrapper {
+  margin: 15px 70px;
+  padding: 20px 0;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  column-gap: 2%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #eaeaea;
+}
+
+.card--1 {
+  background-image: url("/images/card1.png");
+}
+
+.card--2 {
+  background-image: url("/images/card2.png");
+}
+
+.card--3 {
+  background-image: url("/images/card3.png");
+}
+
+.card--1,
+.card--2,
+.card--3 {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.section--4 {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f1f1f1;
+  min-height: 100vh;
+}
+
+.category_wrapper {
+  margin: 40px 0;
+}
+
+.category {
+  font-family: "Varela Round", sans-serif;
+  border: 1px solid #c1bebd;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin: 0 10px;
+  color: #212121;
+  /* color: #eaeaea; */
+}
+
+.selected {
+  /* background-color: #ff7844; */
+  color: #ffff;
+  background-image: linear-gradient(to bottom right, #e0713b, #a62f0a);
+}
+
+.sneaker_grid {
+  margin: 15px 70px;
+  padding: 15px 0;
+  display: grid;
+  justify-content: space-between;
+  /* align-items: center; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 300px;
+  column-gap: 1%;
+  row-gap: 5%;
+}
+
+.sneakers {
+  border-radius: 20px;
+}
+
+.sneaker_image {
+  border-radius: inherit;
+  width: 100%;
+  height: 220px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.sneaker_image > img {
+  object-fit: contain;
+}
+.sneaker_details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 25px;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sneaker_details > p {
+  font-family: "Varela Round", sans-serif;
+  margin: 0;
+  padding: auto;
+}
+
+.sneaker_name,
+.sneaker_price {
+  font-weight: 600;
+  font-size: 18px;
+}
+.sneaker_name {
+  text-align: left;
+}
+.sneaker_price {
+  text-align: center;
+}
+
+.sneaker_brand {
+  font-size: 12px;
+  text-align: left;
+  color: #a2b5bb;
+}
+
+.view_more {
+  cursor: pointer;
+  padding: 10px 24px;
+  border: 1px solid #cfd2cf;
+  border-radius: 8px;
+  color: #525252;
+  margin: 20px 0;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+}
+
+.section--5 {
+  padding: 30px 0;
+  min-height: 50vh;
+}
+.outer_wrapper {
+  background-color: #f1f1f1;
+  /* background-image: linear-gradient(to bottom right, #e0713b, #a62f0a); */
+  margin: 0px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.inner_div {
+  margin: 0 50px 0 60px;
+  text-align: left;
+}
+
+.icon_div > img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon_div > h2 {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.icon_div > p {
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+}
+
+.section--6 {
+  margin: 30px 100px 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 400px;
+  column-gap: 2%;
+}
+
+.box2 > h2 {
+  padding: 0;
+  font-family: "Varela Round", sans-serif;
+}
+
+.box2 > p {
+  font-family: "Varela Round", sans-serif;
+  margin-bottom: 30px;
+  line-height: 150%;
+}
+
+.box2 > a {
+  padding: 10px 25px;
+  background-image: linear-gradient(to bottom right, #e0713b, #a62f0a);
+  font-family: "Varela Round", sans-serif;
+  border-radius: 8px;
+}
+
+hr {
+  margin: 0 70px;
+  border: 1px solid #8d8d8d;
+  color: #8d8d8d;
+}
+
+.section--7 {
+  padding: 40px 0;
+  margin: 0 70px;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+ul {
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Varela Round", sans-serif;
+}
+
+li {
+  padding: 5px 0;
+  font-size: 14px;
+  color: #8d8d8d;
+}
+
+.ul-heading {
+  color: #353535;
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+  padding: 5px 0;
+  font-weight: 600;
+}
